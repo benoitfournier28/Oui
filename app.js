@@ -1,0 +1,17 @@
+const eyeMoving = document.querySelectorAll(".eye");
+
+document.onmousemove = function(){
+    const x = (event.clientX * 100) / window.innerWidth + "%";
+    const y = (event.clientY * 100) / window.innerHeight + "%";
+
+    // for(let i=0; i<2; i++){
+    //     eyeMoving[i].style.left = x;
+    // }
+
+    for (const eye of eyeMoving) {
+        eye.style.left = x;
+        eye.style.top = y;
+        eye.style.transform = "translate(-" + x + ", -" + y + ")";
+        // eye.style.transform = `translate(-${x}, -${y})`;
+    }
+}
