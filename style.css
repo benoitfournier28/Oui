@@ -108,6 +108,12 @@ header div a {
     align-items: center;
 }
 
+@media screen and (max-width: 800px){
+    .container{
+        height: 40vh;
+    }
+}
+
 .owl{
     position: absolute;
     display: inline-block;
@@ -192,6 +198,12 @@ header div a {
     height: 105vh;
 }
 
+@media screen and (max-width: 800px){
+    .sect_project{
+        height: 90vh;
+    }
+}
+
 .title_sect{
     font-size: 4em;
     color: #D64B39;
@@ -199,21 +211,85 @@ header div a {
     margin-bottom: 0.1em;
 }
 
+@media screen and (max-width: 800px){
+    .title_sect {
+    font-size: 1.7em;
+    }
+}
+
 .tree_branch{
     position: relative;
     margin: 0;
-    width: 90%;
+    width: 80%;
     height: 50vh;
-    transform: translate(-10%, -10%) rotate(-23deg);
+}
+
+@media screen and (max-width: 800px){
+    .tree_branch{
+        height: 20vh;
+    }
 }
 
 .tree_branch img{
     position: absolute;
-    width: 100%;
+    max-width: 80%;
+    transform: translate(-10%, -10%) rotate(-23deg);
+}
+
+@media screen and (max-width: 800px){
+    .tree_branch{
+    margin-top: 7%;
+    }
 }
 
 .sect_presentation{
     width: 80%;
+}
+
+.descrip_project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descrip_line{
+    font-size: 1.8em;
+    color: #D64B39;
+}
+
+@media screen and (max-width: 800px){
+    .descrip_line{
+    font-size: 1.2em;
+    }
+}
+
+.contain_imgs{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.img1{
+    position: absolute;
+    width: 60%;
+    left: 15%;
+    top: 50px;
+}
+
+.img2{
+    position: absolute;
+    width: 50%;
+    left: 35%;
+    top: 190px;
+}
+
+.img1 img{
+    width: 100%;
+}
+
+.img2 img{
+    width: 100%;
 }
 
 
